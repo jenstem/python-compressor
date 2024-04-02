@@ -26,10 +26,10 @@ output_entry = tk.Entry(window, width=50)
 
 
 # Buttons
-compress_button = tk.Button(window, text="Compress", command=lambda: compression(open_file(), "compressedoutput2.txt"))
+compress_button = tk.Button(window, text="Compress", command=lambda: compression(open_file(), "CompressedOutput1.txt"))
 compress_button.grid(row=2, column=1, padx=100, pady=30)
 
-decompress_button = tk.Button(window, text="Decompress", command=lambda: decompression(open_file(), "decompressedoutput2.txt"))
+decompress_button = tk.Button(window, text="Decompress", command=lambda: decompression(open_file(), "DecompressedOutput1.txt"))
 decompress_button.grid(row=3, column=1, padx=100, pady=10)
 
 
