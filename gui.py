@@ -22,7 +22,7 @@ output_label = tk.Label(window, text="Compressed file")
 
 
 # Buttons
-compress_button = tk.Button(window, text="Compress")
+compress_button = tk.Button(window, text="Compress", command=lambda: compression(input_entry.get(), output_entry.get()))
 
 
 # Grid Layout
