@@ -11,10 +11,13 @@ def open_file():
 def compression(i, o):
     compress(i, o)
 
+def decompression(i, o):
+    decompress(i, o)
+
 
 window = tk.Tk()
 window.title("Compression Engine")
-window.geometry("600x400")
+window.geometry("300x200")
 
 
 # Entry Fields
@@ -23,8 +26,11 @@ output_entry = tk.Entry(window, width=50)
 
 
 # Buttons
-compress_button = tk.Button(window, text="Compress", command=lambda: compression(open_file(), "compressedoutput1.txt"))
-compress_button.grid(row=2, column=1)
+compress_button = tk.Button(window, text="Compress", command=lambda: compression(open_file(), "compressedoutput2.txt"))
+compress_button.grid(row=2, column=1, padx=100, pady=30)
+
+decompress_button = tk.Button(window, text="Decompress", command=lambda: decompression(open_file(), "decompressedoutput2.txt"))
+decompress_button.grid(row=3, column=1, padx=100, pady=10)
 
 
 window.mainloop()
