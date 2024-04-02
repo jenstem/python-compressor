@@ -40,7 +40,7 @@ WHEN I click on the "Decompress" button and select my compressed text file\
 THEN I can see the decompressed file appear in the folder of the app\
 WHEN I open the decompressed file\
 THEN I see that the text is readable again and the byte size of the file has increased\
-WHEN I click the "x" button on the calculator\
+WHEN I click the "x" button on the app\
 THEN I see the app close
 ##
 
