@@ -21,4 +21,4 @@ def decompress(inputfile, outputfile):
     file.write(decoded_data)
     file.close()
 
-decompress('ot.txt', 'dc1.txt')
+# decompress('ot.txt', 'dc1.txt')
