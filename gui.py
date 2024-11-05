@@ -4,14 +4,34 @@ from tkinter import filedialog
 
 
 def open_file():
+    """
+    Opens a file dialog for the user to select a file to compress.
+
+    Returns:
+        str: The path of the selected file.
+    """
     filename = filedialog.askopenfilename(initialdir="/", title="Select a file to compress")
     return filename
 
 
 def compression(i, o):
+    """
+    Compresses the specified input file and saves it to the output location.
+
+    Args:
+        i (str): The path of the input file to be compressed.
+        o (str): The path where the compressed file will be saved.
+    """
     compress(i, o)
 
 def decompression(i, o):
+    """
+    Decompresses the specified input file and saves it to the output location.
+
+    Args:
+        i (str): The path of the input file to be decompressed.
+        o (str): The path where the decompressed file will be saved.
+    """
     decompress(i, o)
 
 
